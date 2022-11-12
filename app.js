@@ -139,6 +139,9 @@ let port = process.env.PORT;
 if(port == null || post == ""){
   port = 8000;
 }
-app.listen(8000, function() {
+
+
+
+app.listen(port, function() {
   console.log("Server started on port 3000");
 });

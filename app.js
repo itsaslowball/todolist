@@ -46,7 +46,6 @@ const List = mongoose.model("List", listSchema);
 app.get("/", function(req, res) {
 
   Item.find({}, function(err, foundItems){
-
     if (foundItems.length === 0) {
       Item.insertMany(defaultItems, function(err){
         if (err) {
